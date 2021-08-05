@@ -1,0 +1,20 @@
+package regras;
+
+import com.github.frkr.drlexec.*;
+import com.example.*;
+
+global com.github.frkr.drlexec.Retorno retorno;
+
+rule "Teste"
+dialect "mvel"
+when
+    x : Exemplo()
+then
+    retorno.getMsgs().add("Funciona: " + x.dados);
+end
+
+rule "Teste Java"
+when
+then
+    retorno.getMsgs().add("Funciona: Java");
+end

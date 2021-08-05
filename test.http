@@ -1,0 +1,24 @@
+POST http://localhost:8181/teste
+Accept: application/json
+Content-Type: application/json
+
+{
+    "listaComum": [
+        1,
+        2,
+        3
+    ],
+    "dados": [
+        {
+            "id": 4,
+            "colecao": [
+                {
+                    "produtoId": 5
+                },
+                {
+                    "produtoId": 6
+                }
+            ]
+        }
+    ]
+}
