@@ -1,7 +1,10 @@
-### TODO
+# [DRL](src/main/resources/regras/Regra.drl)
 
-- Lambda
-- Dockerfile
+### Lambda Samples
+
+- [SQS](https://github.com/awsdocs/aws-lambda-developer-guide/tree/main/sample-apps/blank-java)
+- [Handler](https://github.com/awsdocs/aws-lambda-developer-guide/tree/main/sample-apps/java-basic)
+- [Events](https://github.com/awsdocs/aws-lambda-developer-guide/tree/main/sample-apps/java-events)
 
 ### jsonschema2pojo
 
@@ -9,5 +12,6 @@
 
 ### Swagger
 
+- [Localhost](http://localhost/swagger-ui.html)
 - [DOC](https://springdoc.org/#migrating-from-springfox)
 - [Exemplo](https://www.baeldung.com/spring-rest-openapi-documentation)
