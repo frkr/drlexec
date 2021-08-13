@@ -80,12 +80,12 @@
         <dependency>
             <groupId>org.drools</groupId>
             <artifactId>drools-compiler</artifactId>
-            <version>7.53.1.Final</version>
+            <version>7.56.0.Final</version>
         </dependency>
         <dependency>
             <groupId>org.drools</groupId>
             <artifactId>drools-mvel</artifactId>
-            <version>7.53.1.Final</version>
+            <version>7.56.0.Final</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
