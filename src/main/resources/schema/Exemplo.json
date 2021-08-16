@@ -1,13 +1,24 @@
 {
     "listaComum": [
-        0
+        1,
+        2,
+        3
     ],
     "dados": [
         {
-            "id": 0,
+            "id": 4,
             "colecao": [
                 {
-                    "produtoId": 0
+                    "produtoId": 5,
+                    "preco": 5.25
+                },
+                {
+                    "produtoId": 6,
+                    "preco": 2.25
+                },
+                {
+                    "produtoId": 5,
+                    "preco": 7.25
                 }
             ]
         }

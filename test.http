@@ -1,4 +1,4 @@
-POST http://localhost:8181/teste
+POST http://localhost/teste
 Accept: application/json
 Content-Type: application/json
 
@@ -13,10 +13,16 @@ Content-Type: application/json
             "id": 4,
             "colecao": [
                 {
-                    "produtoId": 5
+                    "produtoId": 5,
+                    "preco": 5.25
                 },
                 {
-                    "produtoId": 6
+                    "produtoId": 6,
+                    "preco": 2.25
+                },
+                {
+                    "produtoId": 5,
+                    "preco": 7.25
                 }
             ]
         }
