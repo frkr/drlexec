@@ -22,9 +22,12 @@ end
 rule "Teste Lista"
 when
     //vExemplo : Exemplo( vColecao : /dados/colecao[ produtoId == "5" ] )
+    //Exemplo( vDados : /dados[ aColecao : /colecao[ produtoId == "5" ] ] )
     vaccumulate : Double() from accumulate(Exemplo( aColecao : /dados/colecao[ produtoId == "5" ] );,sum(aColecao.getPreco()))
 then
 //   retorno.getMsgs().add("Exemplo: " + vExemplo);
 //   retorno.getMsgs().add("Colecao: " + vColecao);
+//   retorno.getMsgs().add("aColecao: " + aColecao);
+//   retorno.getMsgs().add("vDados: " + vDados);
    retorno.getMsgs().add("accumulate: " + vaccumulate);
 end
