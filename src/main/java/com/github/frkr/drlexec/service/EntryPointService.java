@@ -76,6 +76,7 @@ public class EntryPointService {
             } catch (Exception e) {
 
             }
+            //log.debug(json);
         }
 
         return ResponseEntity.ok(retorno);
