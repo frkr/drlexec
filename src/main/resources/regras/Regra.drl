@@ -1,9 +1,9 @@
 package regras;
 
 import com.github.frkr.drlexec.*;
-import com.example.*;
+import com.github.frkr.drlexec.bean.request.exemplo.*;
 
-global com.github.frkr.drlexec.Retorno retorno;
+global com.github.frkr.drlexec.bean.response.Retorno retorno;
 
 rule "Teste MVEL"
 dialect "mvel"
