@@ -23,22 +23,22 @@
  *
  */
 
-package com.github.frkr.drlexec;
+package com.github.frkr.drlexec.bean.request;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
-import util.UUID5;
 
-import java.util.Date;
-import java.util.Queue;
-import java.util.concurrent.LinkedBlockingQueue;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
+@JsonInclude(JsonInclude.Include.NON_NULL)
 @Data
-public class Retorno {
-    private String bom;
-    private Long timeMillis;
-    private Integer rules;
-    private Date date = new Date();
-    private Object object;
-    private String uuid = UUID5.randomUUID().toString();
-    private Queue<String> msgs = new LinkedBlockingQueue<>();
+public class Bean {
+    @NotBlank
+    @Size(min = 0, max = 20)
+    @Schema(allowableValues = "teste", example = "")
+    private String teste;
 }

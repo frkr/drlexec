@@ -115,7 +115,7 @@
                     <sourceType>json</sourceType>
                     <sourceDirectory>src/main/resources/schema</sourceDirectory>
                     <outputDirectory>src/main/java</outputDirectory>
-                    <targetPackage>com.example</targetPackage>
+                    <targetPackage>com.github.frkr.drlexec.bean.request.exemplo</targetPackage>
                 </configuration>
                 <executions>
                     <execution>

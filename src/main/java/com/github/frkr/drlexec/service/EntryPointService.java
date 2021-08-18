@@ -23,9 +23,10 @@
  *
  */
 
-package com.github.frkr.drlexec;
+package com.github.frkr.drlexec.service;
 
-import com.example.Exemplo;
+import com.github.frkr.drlexec.bean.request.exemplo.Exemplo;
+import com.github.frkr.drlexec.bean.response.Retorno;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
@@ -41,7 +42,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
-public class EntryPoint {
+public class EntryPointService {
 
     private final static KieContainer kc;
 
