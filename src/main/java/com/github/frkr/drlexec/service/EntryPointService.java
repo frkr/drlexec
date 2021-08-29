@@ -27,6 +27,7 @@ package com.github.frkr.drlexec.service;
 
 import com.github.frkr.drlexec.bean.request.exemplo.Exemplo;
 import com.github.frkr.drlexec.bean.response.Retorno;
+import io.swagger.v3.oas.annotations.ExternalDocumentation;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.extern.slf4j.Slf4j;
@@ -42,6 +43,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @Slf4j
 @RestController
+@Tag(name = "EntryPoint", externalDocs = @ExternalDocumentation(description = "Doc", url = "https://github.com/frkr/drlexec"))
 public class EntryPointService {
 
     private final static KieContainer kc;
@@ -50,7 +52,6 @@ public class EntryPointService {
         kc = KieServices.Factory.get().getKieClasspathContainer();
     }
 
-    @Tag(name = "EntryPoint", description = "Ponto de entrada")
     @Operation(summary = "Executar Regras: Testes")
     @RequestMapping(value = "teste", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Retorno> motor(
