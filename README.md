@@ -8,6 +8,7 @@
 
 ### jsonschema2pojo
 
+- TODO Record
 - [DOC](https://joelittlejohn.github.io/jsonschema2pojo/site/1.1.1/generate-mojo.html)
 
 ### Swagger

@@ -1,4 +1,4 @@
-FROM openjdk:8-jre-alpine
+FROM openjdk:16
 EXPOSE 80
 VOLUME /opt/drlexec/config
 VOLUME /opt/drlexec/log
