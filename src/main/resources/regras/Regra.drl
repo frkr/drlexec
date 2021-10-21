@@ -15,8 +15,9 @@ end
 
 rule "Teste Java"
 when
+    x : Exemplo()
 then
-    retorno.getMsgs().add("Funciona: Java");
+    retorno.getMsgs().add("Funciona Java: " + x.getDados());
 end
 
 rule "Teste Lista"
