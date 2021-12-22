@@ -113,7 +113,7 @@
                     <useDoubleNumbers>true</useDoubleNumbers>
                     <useLongIntegers>true</useLongIntegers>
                     <sourceType>json</sourceType>
-                    <sourceDirectory>src/main/resources/schema</sourceDirectory>
+                    <sourceDirectory>src/main/resources/json</sourceDirectory>
                     <outputDirectory>src/main/java</outputDirectory>
                     <targetPackage>com.github.frkr.drlexec.bean.request.exemplo</targetPackage>
                 </configuration>
@@ -125,6 +125,33 @@
                     </execution>
                 </executions>
             </plugin>
+<!--            <plugin>-->
+<!--                <groupId>org.jsonschema2pojo</groupId>-->
+<!--                <artifactId>jsonschema2pojo-maven-plugin</artifactId>-->
+<!--                <version>1.1.1</version>-->
+<!--                <configuration>-->
+<!--                    &lt;!&ndash;                    <includeSetters>false</includeSetters>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <includeGetters>false</includeGetters>&ndash;&gt;-->
+<!--                    &lt;!&ndash;                    <includeToString>false</includeToString>&ndash;&gt;-->
+<!--                    <annotationStyle>none</annotationStyle>-->
+<!--                    <includeHashcodeAndEquals>false</includeHashcodeAndEquals>-->
+<!--                    <includeGeneratedAnnotation>false</includeGeneratedAnnotation>-->
+<!--                    <includeAdditionalProperties>false</includeAdditionalProperties>-->
+<!--                    <useDoubleNumbers>true</useDoubleNumbers>-->
+<!--                    <useLongIntegers>true</useLongIntegers>-->
+<!--                    <sourceType>jsonschema</sourceType>-->
+<!--                    <sourceDirectory>src/main/resources/schema</sourceDirectory>-->
+<!--                    <outputDirectory>src/main/java</outputDirectory>-->
+<!--                    <targetPackage>com.github.frkr.drlexec.bean.request.exemplo</targetPackage>-->
+<!--                </configuration>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>generate</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
